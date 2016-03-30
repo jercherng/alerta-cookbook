@@ -1,9 +1,9 @@
 apt_repository "mongodb-10gen" do
-  uri "http://downloads-distro.mongodb.org/repo/ubuntu-upstart"
-  distribution "dist"
-  components ["10gen"]
+  uri "http://repo.mongodb.org/apt/ubuntu"
+  distribution "#{node['lsb']['codename']}/mongodb-org/3.2"
+  components ["multiverse"]
   keyserver "keyserver.ubuntu.com"
-  key "7F0CEB10"
+  key "EA312927"
 end
 
 package 'mongodb-org'

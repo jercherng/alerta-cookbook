@@ -6,6 +6,6 @@ description      'Installs/Configures alerta'
 long_description 'Installs/Configures alerta'
 version          '0.1.0'
 
-%w(apt ohai newrelic build-essential nginx python logrotate).each do |cookbook|
+%w(apt ohai nginx python logrotate).each do |cookbook|
   depends cookbook
 end
